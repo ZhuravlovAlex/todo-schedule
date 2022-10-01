@@ -2,6 +2,7 @@ import React from "react";
 import TodoList from "../Todo/TodoList";
 import Context from "../context";
 import styles from "./App.module.css"
+import Registration from "../Regisration/Registration";
 
 
 const AddTodo = React.lazy(() => import('../AddTodo'))
@@ -41,7 +42,10 @@ function App() {
   return (
     <Context.Provider value={{removeTodo: removeTodo}}>
       <div className={styles.body}>
-        <h1>React Todo schedule</h1>
+
+        <h2>React Todo schedule</h2>
+
+        <Registration/>
         
         <React.Suspense >
           <AddTodo onCreate={addTodo} />

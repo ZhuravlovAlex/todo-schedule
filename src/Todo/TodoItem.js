@@ -15,6 +15,8 @@ function TodoItem({ todo, index, onChange }) {
 	return (
 		<li className={styles.item} >
 			<span className={classes.join(' ')}>
+			<strong className={styles.posNum}>{index + 1}</strong>
+				&nbsp;
 				<input 
 					className={styles.itemInput}
 					type="checkbox" 
@@ -22,8 +24,7 @@ function TodoItem({ todo, index, onChange }) {
 					onChange={() => onChange(todo.id)} 
 					checked={todo.completed}
 				/>
-				<strong>{index + 1}</strong>
-				&nbsp;
+				
 				{todo.title}
 			</span>
 
