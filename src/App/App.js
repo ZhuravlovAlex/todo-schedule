@@ -3,7 +3,7 @@ import TodoList from "../Todo/TodoList";
 import Context from "../context";
 import styles from "./App.module.css"
 import Registration from "../Regisration/Registration";
-
+import Done from "../Done/Done";
 
 const AddTodo = React.lazy(() => import('../AddTodo'))
 
@@ -56,6 +56,7 @@ function App() {
           }
           
       </div>
+      <Done/>
     </Context.Provider>
   )
 }

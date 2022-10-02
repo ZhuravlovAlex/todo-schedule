@@ -2,9 +2,10 @@ import React, { useContext } from "react";
 import PropTypes from "prop-types"
 import Context from "../context";
 import styles from "./TodoItem.module.css"
+import { connect } from "react-redux"
 
 
-function TodoItem({ todo, index, onChange }) {
+function TodoItem({ todo, index, onChange, doneItems }) {
 	const { removeTodo } = useContext(Context)
 	const classes = []
 
@@ -42,4 +43,10 @@ TodoItem.propTypes = {
 	onChange: PropTypes.func.isRequired
 }
 
-export default TodoItem
+const mapStateToProps = state => {
+	return {
+		doneItems: state.todoItem.todoItem
+	}
+}
+
+export default connect(mapStateToProps, null)(TodoItem)

@@ -5,7 +5,7 @@ import TodoItem from "./TodoItem";
 const styles = {
 	ul: {
 		listStyle: 'none',
-		margin: 0,
+		margin: 40,
 		padding: 0,
 	}
 }
