@@ -1,13 +1,7 @@
 import React from "react";
 import TodoItem from "./TodoItem";
+import styles from "./TodoItem.module.css"
 
-const styles = {
-	ul: {
-		listStyle: 'none',
-		margin: 40,
-		padding: 0,
-	}
-}
 
 function TodoList({ todos, register, toggleTodo, deleteTodo }) {
 	return !register ? <div></div> :
