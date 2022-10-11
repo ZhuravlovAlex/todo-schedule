@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 import { toggleTodo } from '../store/action/toggleTodo';
-import Done from '../components/Done/Done';
+import Done from '../components/Done/Done.tsx';
 
 Done.propTypes = {
 	todos: PropTypes.arrayOf(PropTypes.shape({

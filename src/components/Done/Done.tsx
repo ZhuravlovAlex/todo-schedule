@@ -1,8 +1,11 @@
 import React from "react";
 import TodoItem from "../Todo/TodoItem";
+import {DoneProps} from "../../types"
 import styles from "./Done.module.css"
 
-function Done({ todos, toggleTodo }) {
+
+function Done(props: DoneProps) {
+    const {todos, toggleTodo} = props;
     return (
         <div className={styles.bodyDone}>
             <ul style={styles.ul} >

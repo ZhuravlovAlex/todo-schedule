@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types"
 import styles from "./TodoItem.module.css"
 
-function TodoItem({ todo, index, onChange, onDelete }) {
+function TodoItem({ todo, index, onChange }) {
 	const classes = []
 
 	if (todo.completed) {
@@ -25,8 +25,7 @@ function TodoItem({ todo, index, onChange, onDelete }) {
 				{todo.title}
 			</span>
 
-			<button className={styles.deleteTodo}
-				onClick={() => onDelete(todo.id)}>
+			<button className={styles.deleteTodo}>
 				&times;
 			</button>
 		</li>
