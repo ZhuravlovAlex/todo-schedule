@@ -1,0 +1,14 @@
+.bodyDone {
+	max-width: 600px;
+	max-height: 100%;
+	font: "Century Gothic", Futura, sans-serif;
+	color: bisque;
+	border: solid 2px black;
+	margin: 0 auto;
+	padding: 20px;
+	background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #302b2e 80%);
+}
+
+.bodyDone>ul {
+	margin-right: 40px;
+}

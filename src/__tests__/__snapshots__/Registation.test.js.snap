@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when not signed up  1`] = `
+<form
+  className="registr"
+  onSubmit={[Function]}
+>
+  <input
+    placeholder="Please, enter your name"
+    required={true}
+  />
+  <button
+    type="submit"
+  >
+    Enter
+  </button>
+</form>
+`;
+
+exports[`renders correctly when signed up  1`] = `<div />`;
