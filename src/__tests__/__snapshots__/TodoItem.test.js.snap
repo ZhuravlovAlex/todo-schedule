@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<li
+  className="item"
+>
+  <span
+    className=""
+  >
+    <strong
+      className="posNum"
+    >
+      1
+    </strong>
+     
+    <input
+      checked={false}
+      className="itemInput"
+      onChange={[Function]}
+      style="input"
+      type="checkbox"
+    />
+  </span>
+  <button
+    className="deleteTodo"
+  >
+    ×
+  </button>
+</li>
+`;
