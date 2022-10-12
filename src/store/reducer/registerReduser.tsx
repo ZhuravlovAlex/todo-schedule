@@ -1,4 +1,6 @@
-const register = (state = false, action) => {
+import { RegisterAction } from "../../types";
+
+const register = (state = false, action: RegisterAction) => {
     switch (action.type) {
         case 'SIGN_UP':
             return true;

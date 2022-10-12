@@ -1,4 +1,6 @@
-const todos = (state = [], action) => {
+import { Todo, TodoAction } from "../../types"
+
+const todos = (state: Todo[] = [], action: TodoAction) => {
     switch (action.type) {
         case 'ADD_TODO':
             return [
